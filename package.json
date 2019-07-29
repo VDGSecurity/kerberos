@@ -1,11 +1,11 @@
 {
   "name": "kerberos",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Kerberos library for Node.js",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mongodb-js/kerberos.git"
+    "url": "https://github.com/VDGSecurity/kerberos.git"
   },
   "keywords": [
     "kerberos",
