@@ -200,7 +200,7 @@ NAN_METHOD(InitializeClient) {
 }
 
 NAN_METHOD(InitializeServer) {
-    std::wstring service(to_wstring(v8::String::Utf8Value(info[0]->ToString())));
+    std::wstring service(to_wstring(*(Nan::Utf8String(info[0]))));
     Nan::Callback* callback = new Nan::Callback(Nan::To<v8::Function>(info[1]).ToLocalChecked());
 
     KerberosWorker::Run(callback, "kerberos:InitializeServer", [=](KerberosWorker::SetOnFinishedHandler onFinished) {
